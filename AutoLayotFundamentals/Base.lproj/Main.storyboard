@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CSC-34-dHq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -21,10 +21,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-Us-Pn6">
-                                <rect key="frame" x="97" y="79" width="199" height="136"/>
+                                <rect key="frame" x="20" y="343" width="353" height="166"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sx3-Pj-FEs">
-                                        <rect key="frame" x="0.0" y="0.0" width="199" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="KyT-3w-M2S"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -32,18 +35,18 @@
                                         <state key="normal" title="Treasure Map" backgroundImage="button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gsn-ac-LAH">
-                                        <rect key="frame" x="0.0" y="48" width="199" height="40"/>
+                                        <rect key="frame" x="0.0" y="58" width="353" height="50"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Weather Forcast" backgroundImage="button"/>
                                     </button>
-                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zym-0t-Xgh">
-                                        <rect key="frame" x="0.0" y="96" width="199" height="40"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Zym-0t-Xgh">
+                                        <rect key="frame" x="0.0" y="116" width="353" height="50"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5I-GT-Egi">
-                                                <rect key="frame" x="0.0" y="0.0" width="127" height="40"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="225.33333333333334" height="50"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -51,7 +54,7 @@
                                                 <state key="normal" title="Privacy Policy" backgroundImage="button"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-Vz-R3L">
-                                                <rect key="frame" x="135" y="0.0" width="64" height="40"/>
+                                                <rect key="frame" x="233.33333333333334" y="0.0" width="119.66666666666666" height="50"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
                                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
@@ -61,13 +64,28 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="Gsn-ac-LAH" firstAttribute="height" secondItem="Sx3-Pj-FEs" secondAttribute="height" id="qN6-HH-bcZ"/>
+                                    <constraint firstItem="2aa-Vz-R3L" firstAttribute="height" secondItem="Sx3-Pj-FEs" secondAttribute="height" id="rlf-cA-10O"/>
+                                    <constraint firstItem="j5I-GT-Egi" firstAttribute="height" secondItem="Sx3-Pj-FEs" secondAttribute="height" id="urf-Ib-1zP"/>
+                                </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please do not pirate this code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zm4-vM-TUA">
+                                <rect key="frame" x="20" y="784.66666666666663" width="353" height="13.333333333333371"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="J8h-Us-Pn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cej-vw-Jtf"/>
-                            <constraint firstItem="J8h-Us-Pn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mMv-Nu-MFC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J8h-Us-Pn6" secondAttribute="trailing" constant="20" id="Ac1-CR-Waj"/>
+                            <constraint firstItem="zm4-vM-TUA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="KWn-mZ-rHq"/>
+                            <constraint firstItem="J8h-Us-Pn6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PNc-Es-Q4v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zm4-vM-TUA" secondAttribute="bottom" constant="20" id="c9b-mI-f4y"/>
+                            <constraint firstItem="J8h-Us-Pn6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pjh-Sj-aPT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zm4-vM-TUA" secondAttribute="trailing" constant="20" id="xrb-Be-AmO"/>
                         </constraints>
                     </view>
                 </viewController>
